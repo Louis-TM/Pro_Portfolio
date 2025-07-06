@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
     </head>
     <body>
 
@@ -48,7 +49,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="py-5 bg-light" data-aos="fade-up">
     <div class="container">
         <h2 class="text-center mb-4">About Me</h2>
         <div class="row align-items-center">
@@ -56,24 +57,34 @@
             <img src="assets/images/React-photo.jpeg" class="img-fluid rounded mb-3 shadow" alt="Louis Chartier" width="300">
         </div>
         <div class="col-md-8">
-            <p>Hello! I'm a frontend developer based in Montreal. I build responsive, user-focused web interfaces using HTML, CSS, JavaScript, and React. I'm passionate about clean code, smooth animations, and solving problems through UI design.</p>
+            <p>Hello! I'm a frontend developer based in Montreal. I build responsive, user-focused web interfaces using HTML, CSS, JavaScript, 
+                and React. I'm passionate about clean code, smooth animations, and solving problems through UI design.
+                I am actively searching for an internship starting October 6th 2025. 
+            </p>
         </div>
         </div>
     </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5" data-aos="fade-up">
     <div class="container">
         <h2 class="text-center mb-4">Projects</h2>
         <div class="row g-4">
         <!-- Project 1 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Movie-Explorer.png" class="card-img-top" alt="Project 1">
+            <img src="assets/images/Movie-Explorer.png" class="card-img-top" alt="Project 1" height="320">
             <div class="card-body">
                 <h5 class="card-title">Movie Explorer</h5>
                 <p class="card-text">A React app using the TMDB API to explore and favorite movies. Responsive and mobile-friendly.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
+                <span class="badge bg-info text-dark">React</span>
+                <span class="badge bg-teal text-white">Tailwind CSS</span>
+                <span class="badge bg-dark">TMDB API</span>
+                <span class="badge bg-secondary">Context API</span>
+                <span class="badge bg-warning text-dark">React Router</span>
             </div>
             <div class="card-footer">
                 <a href="https://team4-movie-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
@@ -84,10 +95,18 @@
         <!-- Project 2 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Realtor.png" class="card-img-top" alt="Project 2">
+            <img src="assets/images/Realtor.png" class="card-img-top" alt="Project 2" height="320">
             <div class="card-body">
                 <h5 class="card-title">Realtor Website</h5>
                 <p class="card-text">A PHP & MySQL real estate site with dynamic listings, contact forms, and a mobile-first UI. Built with HTML, CSS, and vanilla PHP for full-stack functionality.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
+                <span class="badge bg-purple">PHP</span>
+                <span class="badge bg-danger">Laravel</span>
+                <span class="badge bg-secondary">MySQL</span>
+                <span class="badge bg-info text-dark">HTML</span>
+                <span class="badge bg-primary">CSS</span>
+                <span class="badge bg-warning text-dark">Responsive Design</span>
             </div>
             <div class="card-footer">
                 <a href="https://github.com/DavidDems/Team2PropExchange" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
@@ -97,13 +116,40 @@
         <!-- Project 3 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/portfolio.png" class="card-img-top" alt="Project 2">
+            <img src="assets/images/portfolio.png" class="card-img-top" alt="Project 3" height="320">
             <div class="card-body">
                 <h5 class="card-title">Personal Portfolio</h5>
                 <p class="card-text">A responsive, single-page portfolio built with HTML, CSS, Bootstrap, and JavaScript. Showcases projects, skills, and contact info with smooth scrolling and a clean UI.</p>
             </div>
+            <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
+                <span class="badge bg-info text-dark">HTML</span>
+                <span class="badge bg-primary">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-purple text-white">Bootstrap</span>
+            </div>
             <div class="card-footer">
-                <a href="https://github.com/DavidDems/Pro-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
+                <a href="https://louis-tm.github.io/Pro_Portfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                <a href="https://github.com/Louis-TM/Pro_Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
+            </div>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+            <img src="assets/images/animal-shelter.png" class="card-img-top" alt="Project 4" height="320">
+            <div class="card-body">
+                <h5 class="card-title">Animal Shelter</h5>
+                <p class="card-text">An application built with JavaFX and Spring Boot for managing animals, adoptions, volunteers, and medical records. Features include a user-friendly UI, 
+                    real-time database integration with MySQL, and modular, maintainable code using 3-tier architecture.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
+                <span class="badge bg-primary">Java</span>
+                <span class="badge bg-success">Spring Boot</span>
+                <span class="badge bg-info text-dark">JavaFX</span>
+                <span class="badge bg-secondary">MySQL</span>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/RIDagher/animal-shelter-spring" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
             </div>
             </div>
         </div>
@@ -112,7 +158,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
         <div class="container text-center">
             <h2 class="mb-4">Skills</h2>
             <div class="skills-icons d-flex justify-content-center flex-wrap gap-3 align-items-center">
@@ -135,10 +181,17 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5" data-aos="fade-up">
     <div class="container text-center">
         <h2 class="mb-3">Get in Touch</h2>
-        <p class="mb-2">📧 <a href="lchartier2002@gmail.com">lchartier2002@gmail.com</a></p>
+        <p>
+            <i class="bi bi-envelope-fill me-2" style="color: #0d6efd;"></i>
+            <a href="mailto:lchartier2002@gmail.com" class="text-decoration-none fw-semibold" style="color: #0d6efd;">
+                lchartier2002@gmail.com
+            </a>
+        </p>
+
+        <a href="assets/CV-Louis-Chartier.pdf" download class="btn btn-success mb-2">Download Resume</a>
         <div class="d-flex justify-content-center gap-3">
         <a href="https://www.linkedin.com/in/louis-chartier-dev/" class="text-decoration-none" target="_blank">
             <i class="bi bi-linkedin fs-3"></i>
@@ -147,6 +200,7 @@
             <i class="bi bi-github fs-3"></i>
         </a>
         </div>
+        
     </div>
     </section>
 
@@ -157,5 +211,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     </body>
 </html>
