@@ -35,21 +35,26 @@
                     </li>
                 </ul>
             </div>
+            <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-2" title="Toggle dark mode">
+                <i class="bi bi-moon-fill" id="theme-icon"></i>
+            </button>
         </div>
     </nav>
 
 
     <!-- Header Section -->
-    <header class="hero text-white text-center d-flex align-items-center">
+    <header class="hero-section text-white text-center d-flex align-items-center">
         <div class="container">
             <h1 class="display-4 text-shadow">Hi, I'm <strong>Louis Chartier</strong></h1>
-            <p class="lead text-shadow">Frontend Developer • HTML • CSS • JavaScript • React</p>
-            <a href="#projects" class="btn btn-light mt-3 shadow-btn" >View My Work</a>
+            <h2 class="fs-4 mt-3">
+                <span id="typed-text"></span>
+            </h2>
+            <a href="#projects" class="btn btn-light mt-3 shadow-btn keep-text-black" >View My Work</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-light" data-aos="fade-up">
+    <section id="about" class="py-5" data-aos="fade-up">
     <div class="container">
         <h2 class="text-center mb-4">About Me</h2>
         <div class="row align-items-center">
@@ -89,7 +94,7 @@
             <div class="card-footer">
                 <a href="https://team4-movie-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
                 <a href="https://github.com/trangtrieu-code/MovieExplorer" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info">Presentation</a>
+                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
             </div>
             </div>
         </div>
@@ -111,7 +116,7 @@
             </div>
             <div class="card-footer">
                 <a href="https://github.com/DavidDems/Team2PropExchange" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info">Presentation</a>
+                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
             </div>
             </div>
         </div>
@@ -152,7 +157,7 @@
             </div>
             <div class="card-footer">
                 <a href="https://github.com/RIDagher/animal-shelter-spring" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/AnimalShelterManagementSystem.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info">Presentation</a>
+                <a href="assets/AnimalShelterManagementSystem.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
             </div>
             </div>
         </div>
@@ -161,24 +166,32 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+    <section id="skills" class="py-5" data-aos="fade-up">
         <div class="container text-center">
             <h2 class="mb-4">Skills</h2>
             <div class="skills-icons d-flex justify-content-center flex-wrap gap-3 align-items-center">
                 <!-- HTML5 -->
-                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/html5/E34F26" title="HTML5" alt="HTML5" width="40" height="40" />
                 <!-- CSS3 -->
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="40" height="40" />
                 <!-- JavaScript -->
-                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" title="JavaScript" alt="JavaScript" width="40" height="40" />
                 <!-- React -->
-                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/react/61DAFB" title="React" alt="React" width="40" height="40" />
                 <!-- Tailwind CSS -->
-                <img src="https://cdn.simpleicons.org/tailwindcss/38B2AC" alt="Tailwind CSS" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/tailwindcss/38B2AC" title="Tailwind CSS" alt="Tailwind CSS" width="40" height="40" />
                 <!-- Bootstrap -->
-                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" title="Bootstrap" alt="Bootstrap" width="40" height="40" />
                 <!-- GitHub -->
-                <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="40" height="40" />
+                <img src="https://cdn.simpleicons.org/github/181717" title="GitHub" alt="GitHub" width="40" height="40" />
+                <!-- MySQL -->
+                <img src="https://cdn.simpleicons.org/mysql" title="MySQL" alt="MySQL" width="40" height="40" />
+                <!-- Node.js -->
+                <img src="https://cdn.simpleicons.org/node.js" title="Node.js" alt="Node.js" width="40" height="40" />
+                <!-- Figma -->
+                <img src="https://cdn.simpleicons.org/figma" title="Figma" alt="Figma" width="40" height="40" />
+                <!-- PHP -->
+                <img src="https://cdn.simpleicons.org/php" title="PHP" alt="PHP" width="40" height="40" />
             </div>
         </div>
     </section>
@@ -213,7 +226,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
