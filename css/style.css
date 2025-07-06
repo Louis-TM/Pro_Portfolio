@@ -1,0 +1,41 @@
+
+
+body {
+    scroll-behavior: smooth;
+    padding-top: 56px;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../assets/images/bg-mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.gradient-bg {
+    background-image: linear-gradient(to bottom right, #0f409c, #305ead);
+}
+
