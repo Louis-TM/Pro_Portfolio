@@ -59,6 +59,14 @@ section {
     background-color: #7952b3;
 }
 
+.bg-darkblue {
+    background-color: #0046c9;
+}
+
+.bg-darkblue:hover {
+    background-color: #003aa7;
+}
+
 
 .badge {
     font-size: 0.85rem;
@@ -132,3 +140,67 @@ body.dark-mode #contact {
     background-color: #1e1e1e;
     color: #f5f5f5;
 }
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    transition: background-color 0.3s;
+}
+
+.theme-switch .icon-sun,
+.theme-switch .icon-moon {
+    font-size: 1rem;
+    color: #fff;
+    z-index: 2;
+}
+
+.theme-switch .switch-slider {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+#themeToggleSwitch:checked + .theme-switch .switch-slider {
+    transform: translateX(30px);
+}
+
+body.dark-mode .theme-switch {
+    background-color: #333;
+}
+
+
+

@@ -14,30 +14,29 @@
     <!-- Nav Section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top gradient-bg">
         <div class="container">
-            <a class="navbar-brand" href="#">Louis Chartier</a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="fw-bold">Louis Chartier</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            <div class="d-none d-lg-flex justify-content-center flex-grow-1">
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item px-2"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-2" title="Toggle dark mode">
-                <i class="bi bi-moon-fill" id="theme-icon"></i>
-            </button>
+            <div class="theme-toggle-wrapper ms-3">
+                <input type="checkbox" id="themeToggleSwitch" hidden>
+                <label for="themeToggleSwitch" class="theme-switch">
+                    <i class="bi bi-moon-fill icon-moon"></i>
+                    <i class="bi bi-sun-fill icon-sun"></i>
+                    <span class="switch-slider"></span>
+                </label>
+            </div>
         </div>
     </nav>
 
@@ -94,7 +93,7 @@
             <div class="card-footer">
                 <a href="https://team4-movie-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
                 <a href="https://github.com/trangtrieu-code/MovieExplorer" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
+                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
             </div>
             </div>
         </div>
@@ -116,7 +115,7 @@
             </div>
             <div class="card-footer">
                 <a href="https://github.com/DavidDems/Team2PropExchange" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
+                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
             </div>
             </div>
         </div>
@@ -157,7 +156,7 @@
             </div>
             <div class="card-footer">
                 <a href="https://github.com/RIDagher/animal-shelter-spring" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/AnimalShelterManagementSystem.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-info keep-text-black">Presentation</a>
+                <a href="assets/AnimalShelterManagementSystem.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
             </div>
             </div>
         </div>

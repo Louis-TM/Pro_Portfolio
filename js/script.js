@@ -9,27 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("theme-toggle");
-    const themeIcon = document.getElementById("theme-icon");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("themeToggleSwitch");
     const body = document.body;
 
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
-    }
+    const isDark = localStorage.getItem("theme") === "dark";
+    body.classList.toggle("dark-mode", isDark);
+    toggle.checked = isDark;
 
-    toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        const isDark = body.classList.contains("dark-mode");
-        if (isDark) {
-            themeIcon.classList.replace("bi-moon-fill", "bi-sun-fill");
-        } else {
-            themeIcon.classList.replace("bi-sun-fill", "bi-moon-fill");
-        }
-        localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggle.addEventListener("change", () => {
+        const enabled = toggle.checked;
+        body.classList.toggle("dark-mode", enabled);
+        localStorage.setItem("theme", enabled ? "dark" : "light");
     });
 });
+
 
 window.addEventListener("scroll", function() {
     const scrolled = window.pageYOffset;
