@@ -208,3 +208,36 @@ body.dark-mode .theme-switch {
     object-fit: contain;
     background-color: #f1f1f1;
 }
+
+html { scroll-padding-top: 70px; }
+body { overflow-x: hidden; }
+
+.card-footer { display: flex; flex-wrap: wrap; gap: .5rem; }
+#contact a { overflow-wrap: anywhere; }
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh; /* fallback */
+        min-height: calc(100svh - 56px);
+        padding: 3rem 0;
+        background-attachment: scroll;
+        background-position: center;
+    }
+    .hero-section h1 { font-size: 2rem; }
+    .hero-section h2 { font-size: 1.1rem; }
+
+    section { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .img-market {
+        height: 200px;
+        object-fit: contain;
+    }
+
+    #about img { max-width: 220px; }
+}
