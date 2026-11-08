@@ -23,12 +23,13 @@
             </button>
             <div class="d-none d-lg-flex justify-content-center flex-grow-1">
                 <ul class="navbar-nav mb-0">
-                    <li class="nav-item px-2"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item px-2"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item px-2"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item px-2"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
+            <button type="button" id="langToggle" class="btn btn-sm btn-outline-light ms-3" aria-label="Changer la langue / Change language">FR</button>
             <div class="theme-toggle-wrapper ms-3">
                 <input type="checkbox" id="themeToggleSwitch" hidden>
                 <label for="themeToggleSwitch" class="theme-switch">
@@ -44,24 +45,24 @@
     <!-- Header Section -->
     <header class="hero-section text-white text-center d-flex align-items-center">
         <div class="container">
-            <h1 class="display-4 text-shadow">Hi, I'm <strong>Louis Chartier</strong></h1>
+            <h1 class="display-4 text-shadow" data-i18n-html="hero.title">Hi, I'm <strong>Louis Chartier</strong></h1>
             <h2 class="fs-4 mt-3">
                 <span id="typed-text"></span>
             </h2>
-            <a href="#projects" class="btn btn-light mt-3 shadow-btn keep-text-black" >View My Work</a>
+            <a href="#projects" class="btn btn-light mt-3 shadow-btn keep-text-black" data-i18n="hero.cta">View My Work</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="py-5" data-aos="fade-up">
     <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
+        <h2 class="text-center mb-4" data-i18n="about.title">About Me</h2>
         <div class="row align-items-center">
         <div class="col-md-4 text-center">
             <img src="assets/images/React-photo.jpeg" class="img-fluid rounded mb-3 shadow" alt="Louis Chartier" width="300">
         </div>
         <div class="col-md-8">
-            <p>Full Stack Developer with a strong frontend focus and a track record of delivering production-grade web applications, including a
+            <p data-i18n="about.text">Full Stack Developer with a strong frontend focus and a track record of delivering production-grade web applications, including a
                 deployed CRM-based event planning platform built with React, Spring Boot, and PostgreSQL. Owns projects end-to-end, from
                 requirements and database design through deployment and iteration, while managing client relationships and architectural
                 decisions independently. Bilingual (EN/FR), detail-oriented, and experienced with AI-assisted development workflows. Actively
@@ -75,15 +76,15 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5" data-aos="fade-up">
     <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
+        <h2 class="text-center mb-4" data-i18n="projects.title">Projects</h2>
         <div class="row g-4">
         <!-- Project 1 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Movie-Explorer.png" class="card-img-top" alt="Project 1" height="320">
+            <img src="assets/images/Movie-Explorer.png" class="card-img-top" alt="Movie Explorer screenshot" data-i18n-alt="alt.movie" height="320">
             <div class="card-body">
                 <h5 class="card-title">Movie Explorer</h5>
-                <p class="card-text">A React app using the TMDB API to explore and favorite movies. Responsive and mobile-friendly.</p>
+                <p class="card-text" data-i18n="p1.desc">A React app using the TMDB API to explore and favorite movies. Responsive and mobile-friendly.</p>
             </div>
             <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
                 <span class="badge bg-info text-dark">React</span>
@@ -93,18 +94,18 @@
                 <span class="badge bg-warning text-dark">React Router</span>
             </div>
             <div class="card-footer">
-                <a href="https://team4-movie-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                <a href="https://team4-movie-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btn.demo">Live Demo</a>
                 <a href="https://github.com/trangtrieu-code/MovieExplorer" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
+                <a href="assets/MovieExplorer.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white" data-i18n="btn.presentation">Presentation</a>
             </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/TheSideline.png" class="card-img-top" alt="Project 2" height="320">
+            <img src="assets/images/TheSideline.png" class="card-img-top" alt="Twitter Clone screenshot" data-i18n-alt="alt.twitter" height="320">
             <div class="card-body">
-                <h5 class="card-title">Twitter Clone</h5>
-                <p class="card-text">Twitter clone using React + Vite, Python FastAPI, and MySQL. Responsive and mobile-friendly.</p>
+                <h5 class="card-title" data-i18n="p2.title">Twitter Clone</h5>
+                <p class="card-text" data-i18n="p2.desc">Twitter clone using React + Vite, Python FastAPI, and MySQL. Responsive and mobile-friendly.</p>
             </div>
 
             <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
@@ -116,7 +117,7 @@
             </div>
             <div class="card-footer">
                 <a href="https://github.com/DavidDems/TheSideline" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/TheSideline.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
+                <a href="assets/TheSideline.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white" data-i18n="btn.presentation">Presentation</a>
                 
             </div>
             </div>
@@ -124,10 +125,10 @@
         <!-- Project 2 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Realtor.png" class="card-img-top" alt="Project 3" height="320">
+            <img src="assets/images/Realtor.png" class="card-img-top" alt="Realtor Website screenshot" data-i18n-alt="alt.realtor" height="320">
             <div class="card-body">
-                <h5 class="card-title">Realtor Website</h5>
-                <p class="card-text">A PHP & MySQL real estate site with dynamic listings, contact forms, and a mobile-first UI. Built with HTML, CSS, and vanilla PHP for full-stack functionality.</p>
+                <h5 class="card-title" data-i18n="p3.title">Realtor Website</h5>
+                <p class="card-text" data-i18n="p3.desc">A PHP & MySQL real estate site with dynamic listings, contact forms, and a mobile-first UI. Built with HTML, CSS, and vanilla PHP for full-stack functionality.</p>
             </div>
             <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
                 <span class="badge bg-purple">PHP</span>
@@ -135,21 +136,21 @@
                 <span class="badge bg-secondary">MySQL</span>
                 <span class="badge bg-info text-dark">HTML</span>
                 <span class="badge bg-primary">CSS</span>
-                <span class="badge bg-warning text-dark">Responsive Design</span>
+                <span class="badge bg-warning text-dark" data-i18n="p3.badge">Responsive Design</span>
             </div>
             <div class="card-footer">
                 <a href="https://github.com/DavidDems/Team2PropExchange" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">GitHub</a>
-                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white">Presentation</a>
+                <a href="assets/PropExchange.pdf" target="_blank" rel="noopener noreferrer" class="btn bg-darkblue text-white" data-i18n="btn.presentation">Presentation</a>
             </div>
             </div>
         </div>
         <!-- Project 3 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Black-on-Transparent-2.webp" class="card-img-top" alt="Project 4" height="320">
+            <img src="assets/images/Black-on-Transparent-2.webp" class="card-img-top" alt="Internal System Management Application" data-i18n-alt="alt.internal" height="320">
             <div class="card-body">
-                <h5 class="card-title">Internal System Management Application</h5>
-                <p class="card-text">A React + Spring Boot application customly designed to fit a businesses needs. Centralized management platform with a CRM approach.</p>
+                <h5 class="card-title" data-i18n="p4.title">Internal System Management Application</h5>
+                <p class="card-text" data-i18n="p4.desc">A React + Spring Boot application customly designed to fit a businesses needs. Centralized management platform with a CRM approach.</p>
             </div>
             <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
                 <span class="badge bg-info text-dark">React</span>
@@ -161,13 +162,13 @@
             </div>
             </div>
         </div>
-        </div>
+        <!-- Project 4 -->
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-            <img src="assets/images/Market.png" class="card-img-top" alt="Project 4" height="320">
+            <img src="assets/images/Market.png" class="card-img-top" alt="Market Place screenshot" data-i18n-alt="alt.market" height="320">
             <div class="card-body">
-                <h5 class="card-title">Market Place</h5>
-                <p class="card-text">Marketplace demo built with Angular, showcasing product browsing, search/filter/sort, a persistent cart, and a mock authentication flow. Built with standalone components and signals for reactive state management, with a fully custom, responsive design.</p>
+                <h5 class="card-title" data-i18n="p5.title">Market Place</h5>
+                <p class="card-text" data-i18n="p5.desc">Marketplace demo built with Angular, showcasing product browsing, search/filter/sort, a persistent cart, and a mock authentication flow. Built with standalone components and signals for reactive state management, with a fully custom, responsive design.</p>
             </div>
             <div class="d-flex flex-wrap gap-2 pt-2 pb-3 px-2">
                 <span class="badge bg-info text-dark">Angular</span>
@@ -175,9 +176,10 @@
                 <span class="badge bg-purple text-white">TypeScript</span>
             </div>
             <div class="card-footer">
+                <a href="https://marketmix1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btn.demo">Live Demo</a>
             </div>
-            <a href="https://marketmix1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
             </div>
+        </div>
         </div>
     </div>
     </section>
@@ -185,7 +187,7 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5" data-aos="fade-up">
         <div class="container text-center">
-            <h2 class="mb-4">Skills</h2>
+            <h2 class="mb-4" data-i18n="skills.title">Skills</h2>
             <div class="skills-icons d-flex justify-content-center flex-wrap gap-3 align-items-center">
                 <!-- HTML5 -->
                 <img src="https://cdn.simpleicons.org/html5/E34F26" title="HTML5" alt="HTML5" width="40" height="40" />
@@ -216,7 +218,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5" data-aos="fade-up">
     <div class="container text-center">
-        <h2 class="mb-3">Get in Touch</h2>
+        <h2 class="mb-3" data-i18n="contact.title">Get in Touch</h2>
         <p>
             <i class="bi bi-envelope-fill me-2" style="color: #0d6efd;"></i>
             <a href="mailto:lchartier2002@gmail.com" class="text-decoration-none fw-semibold" style="color: #0d6efd;">
@@ -224,7 +226,7 @@
             </a>
         </p>
 
-        <a href="assets/Louis_Chartier_Resume.pdf" download class="btn btn-success mb-2">Download Resume</a>
+        <a href="assets/Louis_Chartier_Resume.pdf" download class="btn btn-success mb-2" data-i18n="contact.resume">Download Resume</a>
         <div class="d-flex justify-content-center gap-3">
         <a href="https://www.linkedin.com/in/louis-chartier-dev/" class="text-decoration-none" target="_blank">
             <i class="bi bi-linkedin fs-3"></i>
@@ -239,12 +241,13 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 gradient-bg">
-    <p class="mb-0">© 2025 Louis Chartier. All rights reserved.</p>
+    <p class="mb-0" data-i18n="footer.text">© 2025 Louis Chartier. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
