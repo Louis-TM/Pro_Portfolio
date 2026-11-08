@@ -35,7 +35,7 @@ const translations = {
     "btn.presentation": "Presentation",
     "skills.title": "Skills",
     "contact.title": "Get in Touch",
-    "contact.resume": "Download Resume",
+    "contact.resumeHref": "assets/Louis_Chartier_Resume.pdf",
     "footer.text": "© 2025 Louis Chartier. All rights reserved.",
   },
   fr: {
@@ -74,7 +74,7 @@ const translations = {
     "btn.presentation": "Présentation",
     "skills.title": "Compétences",
     "contact.title": "Me joindre",
-    "contact.resume": "Télécharger mon CV",
+    "contact.resumeHref": "assets/Louis_Chartier_CV_FR.pdf",
     "footer.text": "© 2025 Louis Chartier. Tous droits réservés.",
   },
 };
@@ -100,6 +100,11 @@ function setLanguage(lang) {
     const alt = dict[el.dataset.i18nAlt];
     if (alt !== undefined) el.setAttribute("alt", alt);
   });
+
+  document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+  const href = dict[el.dataset.i18nHref];
+  if (href !== undefined) el.setAttribute("href", href);
+});
 
   document.title = dict["meta.title"];
   document.documentElement.lang = lang;
