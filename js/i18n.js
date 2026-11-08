@@ -33,6 +33,12 @@ const translations = {
       "Marketplace demo built with Angular, showcasing product browsing, search/filter/sort, a persistent cart, and a mock authentication flow. Built with standalone components and signals for reactive state management, with a fully custom, responsive design.",
     "btn.demo": "Live Demo",
     "btn.presentation": "Presentation",
+    "video.title": "Video Presentation",
+    "video.src": "https://www.youtube.com/embed/s5SVLmnr1t4?enablejsapi=1",
+    "pres.movie": "assets/MovieExplorer.pdf",
+    "pres.sideline": "assets/TheSideline.pdf",
+    "pres.prop": "assets/PropExchange.pdf",
+    "pres.events": "assets/Events by Paige Ligris - Project.pdf",
     "skills.title": "Skills",
     "contact.title": "Get in Touch",
     "contact.resumeHref": "assets/Louis_Chartier_Resume.pdf",
@@ -72,6 +78,12 @@ const translations = {
       "Démo de place de marché construite avec Angular : navigation dans les produits, recherche/filtre/tri, panier persistant et authentification simulée. Composants standalone et signals pour la gestion d'état réactive, avec un design entièrement personnalisé et responsive.",
     "btn.demo": "Démo en ligne",
     "btn.presentation": "Présentation",
+    "video.src": "https://www.youtube.com/embed/af5INLcQ7Sc?enablejsapi=1",
+    "pres.movie": "assets/MovieExplorer.pdf",
+    "pres.sideline": "assets/TheSideline.pdf",
+    "pres.prop": "assets/PropExchange.pdf",
+    "pres.events": "assets/Events by Paige Ligris - Présentation du projet (FR).pdf",
+    "video.title": "Présentation vidéo",
     "skills.title": "Compétences",
     "contact.title": "Me joindre",
     "contact.resumeHref": "assets/Louis_Chartier_CV_FR.pdf",
@@ -105,6 +117,16 @@ function setLanguage(lang) {
   const href = dict[el.dataset.i18nHref];
   if (href !== undefined) el.setAttribute("href", href);
 });
+
+document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+    const href = dict[el.dataset.i18nHref];
+    if (href !== undefined) el.setAttribute("href", href);
+  });
+
+  document.querySelectorAll("[data-i18n-src]").forEach((el) => {
+    const src = dict[el.dataset.i18nSrc];
+    if (src !== undefined && el.getAttribute("src") !== src) el.setAttribute("src", src);
+  });
 
   document.title = dict["meta.title"];
   document.documentElement.lang = lang;

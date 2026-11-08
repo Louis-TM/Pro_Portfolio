@@ -1,4 +1,18 @@
 let typed;
+let ytPlayer;
+
+function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player("ytPlayer", {
+        events: {
+            onReady: (e) => e.target.setVolume(25)
+        }
+    });
+}
+
+const ytScript = document.createElement("script");
+ytScript.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(ytScript);
+
 
 const typedStrings = {
     en: ["Full-Stack Developer", "React Enthusiast", "UI/UX Designer"],
@@ -15,7 +29,9 @@ function startTyped(lang) {
         showCursor: true,
         cursorChar: "|"
     });
+
 }
+
 
 document.addEventListener("DOMContentLoaded", () => startTyped("en"));
 document.addEventListener("languagechange", (e) => startTyped(e.detail.lang));
