@@ -203,4 +203,8 @@ body.dark-mode .theme-switch {
 }
 
 
-
+.img-market {
+    height: 320px;
+    object-fit: contain;
+    background-color: #f1f1f1;
+}
